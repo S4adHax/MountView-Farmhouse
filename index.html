@@ -201,6 +201,7 @@
   </video>
 
   <div class="hero-content">
+```
 
       <span class="tag">Sunkenepally, Choutuppal, Telangana</span>
       <h1>Enjoy a private farmhouse getaway with pool, BBQ, bonfire and more.</h1>
@@ -245,6 +246,7 @@
     <video controls autoplay muted loop playsinline>
       <source src="images/farm-video-1.mp4" type="video/mp4">
     </video>
+
 
   </div>
 </section>
@@ -315,7 +317,7 @@
     <a href="tel:+917396513084" class="btn">Call: +91 7396513084</a>
     <a href="https://wa.me/917396513084" target="_blank" class="btn dark">WhatsApp</a>
   </section>
-  
+
 <section id="instagram" class="dark-section">
   <h2 class="section-title">Follow Us on Instagram</h2>
 
@@ -331,6 +333,7 @@
     Visit Instagram
   </a>
 </section>
+
   <footer>
     <p>© 2026 MountView Farmhouse. All rights reserved.</p>
   </footer>
@@ -341,15 +344,15 @@
      const checkout = new Date(document.getElementById("checkout").value);
       let days = 1; if (checkin && checkout && checkout > checkin) { const diffTime = checkout - checkin; days = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
 
-      } // ₹10,500 per 24 hours
+      } // ₹10,999 per 24 hours
        let total = days * 10500; // Only one extra ₹250 charge if guests exceed 25
- if (guests > 25) {
+        if (guests > 25) {
     total += (guests - 25) * 250;
   }
 
   document.getElementById("total").innerText = total.toLocaleString("en-IN");
   return total;
-}
+   }
 
     function sendWhatsApp(event) {
       event.preventDefault();
